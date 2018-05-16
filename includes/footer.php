@@ -1,0 +1,1 @@
+<footer class="footer text-center"> &copy; Copyright 2018 BRIDGE - Todos os direitos reservados </footer>
