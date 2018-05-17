@@ -72,7 +72,7 @@
                         <div class="white-box">
                             <h3 class="box-title">Homepage</h3> 
                                             
-                            <form class="form-horizontal form-material" method="POST" action="../homepage/editardepartamento.php">
+                            <form class="form-horizontal form-material" method="POST" action="../homepage/editardepartamento.php" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label class="col-md-12">Título</label>
                                     <div class="col-md-12">
@@ -82,7 +82,7 @@
                                   <div class="form-group">
                                     <label class="col-md-12">Imagem</label>
                                     <div class="col-md-12">
-                                 <input type="file" id="InputFile">
+                                 <input type="file" id="InputFile" name="InputFile">
                                   </div>
                                 </div>
                                 
