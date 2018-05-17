@@ -61,6 +61,7 @@
                 
 <?php
      $conexao = mysqli_connect("127.0.0.1", "root", "", "erich");
+      mysqli_set_charset($conexao, 'utf8');
      $dados = mysqli_query($conexao,  "SELECT * FROM home WHERE id = 1");
 
      while ($home = mysqli_fetch_array($dados)):
@@ -77,6 +78,12 @@
                                     <div class="col-md-12">
                                         <input type="text" name="T_titulo" class="form-control form-control-line" value="<?= $home['titulo'] ?>"> 
                                     </div>
+                                </div>
+                                  <div class="form-group">
+                                    <label class="col-md-12">Imagem</label>
+                                    <div class="col-md-12">
+                                 <input type="file" id="InputFile">
+                                  </div>
                                 </div>
                                 
                                <div class="form-group">
